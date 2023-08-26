@@ -4,5 +4,6 @@ const Map<String, String> ar_AR = {
   "Clear":"مسح النص",
   "GoToPage":"الذهاب إلى الصفحة",
   "Animations":"الرسوم المتحركة",
-
+  "Pokemons":"البوكيمونات",
+  "SomeThingWentWrong":"لقد حدث خطأ ما",
 };

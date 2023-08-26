@@ -37,6 +37,9 @@ dependencies:
   dio:
   flutter_screenutil: ^5.9.0
   hexcolor:
+  paginated_list: ^1.2.3
+  shimmer: ^3.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

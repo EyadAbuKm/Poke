@@ -4,4 +4,7 @@ const Map<String, String> en_US = {
     "Clear":"Clear text",
     "GoToPage":"Go to page",
     "Animations":"Animations",
+    "Pokemons":"Pokemons",
+    "SomeThingWentWrong":"Some thing went wrong",
+
 };

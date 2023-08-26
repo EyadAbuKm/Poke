@@ -1,5 +1,7 @@
 import 'package:ososs_test/modules/modules.dart';
 import 'package:get/get.dart';
+import 'package:ososs_test/modules/pokemons/controller/pokemons_binding.dart';
+import 'package:ososs_test/modules/pokemons/view/pokemons_screen.dart';
 
 
 import '../../modules/animations_screen/animations.dart';
@@ -26,6 +28,11 @@ class AppPages {
       name: Routes.ANIMATIONS,
       page: () => AnimationsScreen(),
       binding: AnimationsScreenBinding(),
+    ),
+    GetPage(
+      name: Routes.POKEMONS,
+      page: () => PokemonsScreen(),
+      binding: PokemonsBinding(),
     ),
 
 
