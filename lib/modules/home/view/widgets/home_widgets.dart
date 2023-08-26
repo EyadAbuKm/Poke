@@ -64,7 +64,9 @@ Widget buildBottomButtonsSection() {
         height: 12.h,
       ),
       AppElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Get.toNamed(Routes.POKEMONS);
+        },
         text: "${'GoToPage'.tr} 2",
         color: Colors.blue[200],
       ),
