@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ososs_test/shared/shared.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
@@ -7,7 +6,6 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: FlutterLogo(
-
           size: 150.0,
         ),
       ),

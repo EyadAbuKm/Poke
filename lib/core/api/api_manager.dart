@@ -1,6 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:get/get.dart' as git;
-import 'package:http/http.dart' as http;
 import 'package:ososs_test/core/api/api.dart';
 
 import '../enums/request_type_enum.dart';
