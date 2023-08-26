@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:ososs_test/shared/widgets/app_elevated_button.dart';
 
-import '../controller/home_controller.dart';
 import 'widgets/home_widgets.dart';
 
 class HomeScreen extends StatelessWidget {

@@ -1,20 +1,31 @@
-
-
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ososs_test/shared/constants/colors.dart';
 
 class AppTheme {
   static final lightTheme = ThemeData(
-    brightness: Brightness.light,
-    primaryColor: Color(0xFF337AB7),
-
-      colorScheme: ColorScheme.fromSwatch().copyWith(primary: Color(0xFF337AB7), brightness: Brightness.light ,secondary:Color(0xFFFF5757 )
-    // Other theme properties...
-  ));
+      brightness: Brightness.light,
+      primaryColor: Color(0xFF337AB7),
+      textTheme: TextTheme(
+        labelLarge: TextStyle(fontSize: 16.sp), // Adjust the font size here
+      ),
+      colorScheme: ColorScheme.fromSwatch().copyWith(
+        primary: ColorConstants.primaryColor, brightness: Brightness.light,
+        secondary: ColorConstants.secondaryColor,
+        // Other theme properties...
+      ));
 
   static final darkTheme = ThemeData(
-    brightness: Brightness.dark,
-    primaryColor: Color(0xFF337AB7),
-  colorScheme: ColorScheme.fromSwatch().copyWith(primary: Color(0xFF337AB7), brightness: Brightness.dark ,secondary:Color(0xFFFF5757 ))
-    // Other theme properties...
+      brightness: Brightness.dark,
+      primaryColor: ColorConstants.primaryColor,
+      textTheme: TextTheme(
+        labelLarge: TextStyle(fontSize: 16.sp), // Adjust the font size here
+      ),
+      colorScheme: ColorScheme.fromSwatch().copyWith(
+        primary: ColorConstants.primaryColor,
+        brightness: Brightness.dark,
+        secondary: ColorConstants.secondaryColor,
+      )
+      // Other theme properties...
   );
 }
