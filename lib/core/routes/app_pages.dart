@@ -1,6 +1,8 @@
 import 'package:ososs_test/modules/modules.dart';
 import 'package:get/get.dart';
 
+
+import '../../modules/animations_screen/animations.dart';
 import '../../modules/home/home.dart';
 part 'app_routes.dart';
 
@@ -19,6 +21,12 @@ class AppPages {
         page: () => HomeScreen(),
         binding: HomeBinding(),
       ),
+
+    GetPage(
+      name: Routes.ANIMATIONS,
+      page: () => AnimationsScreen(),
+      binding: AnimationsScreenBinding(),
+    ),
 
 
   ];

@@ -3,4 +3,6 @@ const Map<String, String> ar_AR = {
   "EnterYourName":"ادخل اسمك",
   "Clear":"مسح النص",
   "GoToPage":"الذهاب إلى الصفحة",
+  "Animations":"الرسوم المتحركة",
+
 };

@@ -3,4 +3,5 @@ const Map<String, String> en_US = {
     "EnterYourName":"Enter your name",
     "Clear":"Clear text",
     "GoToPage":"Go to page",
+    "Animations":"Animations",
 };

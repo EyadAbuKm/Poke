@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
+import '../../../../core/routes/app_pages.dart';
 import '../../../../shared/widgets/app_elevated_button.dart';
 import '../../controller/home_controller.dart';
 
@@ -53,7 +54,9 @@ Widget buildBottomButtonsSection() {
             ],
           )),
       AppElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Get.toNamed(Routes.ANIMATIONS);
+        },
         text: "${'GoToPage'.tr} 1",
         color: Colors.blue[800],
       ),
