@@ -33,7 +33,7 @@ class _PokemonsScreenState extends State<PokemonsScreen> {
                 );
               } else if (controller.status == Status.error) {
                 return Center(
-                  child: Text("SomeThingWentWrong".tr),
+                  child: Text("error".tr),
                 );
               } else {
                 return buildThePokemonsList(context);

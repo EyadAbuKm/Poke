@@ -6,5 +6,7 @@ const Map<String, String> en_US = {
     "Animations":"Animations",
     "Pokemons":"Pokemons",
     "SomeThingWentWrong":"Some thing went wrong",
+    "error":"Error",
+
 
 };

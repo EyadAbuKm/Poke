@@ -30,7 +30,7 @@ class App extends StatelessWidget {
           initialRoute: Routes.SPLASH,
           getPages: AppPages.routes,
           initialBinding: AppBinding(),
-          theme: AppTheme.lightTheme,
+          theme: AppTheme.darkTheme,
           locale: TranslationService.locale,
           fallbackLocale: TranslationService.fallbackLocale,
           translations: TranslationService(),

@@ -5,13 +5,15 @@ import 'package:ososs_test/repositories/pokemons/models/pokemon_model.dart';
 
 class PokemonRepository{
   
-  
-  
-  Future<List<PokemonModel>> getPokemons({required int page, required int pageSize})async{
-    
-    
-    var data = await ApiManager.instance.execute(type: RequestType.GET, endPoint: "pokemon?limit=$pageSize&offset=${pageSize*page}");
 
-    return (data["results"] as List).map((e) => PokemonModel.fromJson(e)).toList();
+  Future<List<PokemonModel>> getPokemons({required int page, required int pageSize})async{
+
+    final offset = pageSize * page;
+    final endPoint = "pokemon?limit=$pageSize&offset=$offset";
+
+    final data = await ApiManager.instance.execute(type: RequestType.GET, endPoint: endPoint);
+
+    final pokemonList = (data["results"] as List).map((e) => PokemonModel.fromJson(e)).toList();
+    return pokemonList;
   }
 }

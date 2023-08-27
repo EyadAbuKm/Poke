@@ -9,6 +9,9 @@ class AppTheme {
       textTheme: TextTheme(
         labelLarge: TextStyle(fontSize: 16.sp), // Adjust the font size here
       ),
+      appBarTheme: AppBarTheme(
+          backgroundColor: Colors.white,
+      ),
       colorScheme: ColorScheme.fromSwatch().copyWith(
         primary: ColorConstants.primaryColor, brightness: Brightness.light,
         secondary: ColorConstants.secondaryColor,
@@ -17,6 +20,11 @@ class AppTheme {
 
   static final darkTheme = ThemeData(
       brightness: Brightness.dark,
+      appBarTheme: AppBarTheme(
+          backgroundColor: Colors.grey[800],
+          titleTextStyle: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w700)
+
+      ),
       primaryColor: ColorConstants.primaryColor,
       textTheme: TextTheme(
         labelLarge: TextStyle(fontSize: 16.sp), // Adjust the font size here

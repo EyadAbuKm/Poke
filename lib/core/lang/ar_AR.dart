@@ -6,4 +6,5 @@ const Map<String, String> ar_AR = {
   "Animations":"الرسوم المتحركة",
   "Pokemons":"البوكيمونات",
   "SomeThingWentWrong":"لقد حدث خطأ ما",
+  "error":"خطأ",
 };

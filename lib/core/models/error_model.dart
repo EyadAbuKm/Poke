@@ -12,8 +12,8 @@ class ErrorResponse {
 
   String toRawJson() => json.encode(toJson());
 
-  factory ErrorResponse.fromJson(Map<String, dynamic> json) => ErrorResponse(
-    error: json["error"],
+  factory ErrorResponse.fromJson(dynamic json) => ErrorResponse(
+    error: json,
   );
 
   Map<String, dynamic> toJson() => {

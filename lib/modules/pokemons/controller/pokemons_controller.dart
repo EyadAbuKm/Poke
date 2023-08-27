@@ -27,17 +27,23 @@ class PokemonsController extends GetxController {
   void fetchPokemons({isFirst = false}) async {
     status = isFirst ? Status.loading : Status.loadingMore;
     update();
-    var result =
-        await _pokemonRepository.getPokemons(page: page, pageSize: pageSize);
+    try{
+      var result =
+      await _pokemonRepository.getPokemons(page: page, pageSize: pageSize);
 
-    pokemons.addAll(result);
+      pokemons.addAll(result);
 
-    if (result.isEmpty) {
-      isLastPage = true;
-    } else {
-      page++;
+      if (result.isEmpty) {
+        isLastPage = true;
+      } else {
+        page++;
+      }
+      status = Status.loaded;
     }
-    status = Status.loaded;
+    catch(e){
+      status = Status.error;
+    }
+
     update();
   }
 }
