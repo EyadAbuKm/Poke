@@ -19,8 +19,9 @@ Widget buildTopTextsSection(BuildContext context) {
       ),
       SizedBox(height: 20.h),
       GetBuilder<HomeController>(builder: (controller) {
+        String text =  controller.nameController.text;
         return Text(
-          homeController.nameController.text,
+         text.isEmpty?"yourName".tr:text,
           style: Theme.of(context).textTheme.headlineSmall,
         );
       }),

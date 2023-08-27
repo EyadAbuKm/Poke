@@ -7,6 +7,10 @@ const Map<String, String> en_US = {
     "Pokemons":"Pokemons",
     "SomeThingWentWrong":"Some thing went wrong",
     "error":"Error",
+    "SelectLanguage":"Select Language",
+    "Arabic":"Arabic",
+    "English":"English",
+    "yourName":"Your name",
 
 
 };

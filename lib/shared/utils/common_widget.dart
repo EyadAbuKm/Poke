@@ -17,7 +17,7 @@ class CommonWidget {
 
 
   static void snackBar(String error) async {
-    await Get.showSnackbar(
+     Get.showSnackbar(
       GetSnackBar(title:"error".tr ,  duration: Duration(seconds: 3),message: error,      backgroundColor: Colors.red,
       )
 );

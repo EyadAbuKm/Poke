@@ -7,4 +7,8 @@ const Map<String, String> ar_AR = {
   "Pokemons":"البوكيمونات",
   "SomeThingWentWrong":"لقد حدث خطأ ما",
   "error":"خطأ",
+  "SelectLanguage":"اختار اللغة",
+  "Arabic":"العربية",
+  "English":"الانكليزية",
+  "yourName":"اسمك",
 };
