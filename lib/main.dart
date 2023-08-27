@@ -22,15 +22,15 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
         designSize: const Size(360, 690),
-        minTextAdapt: true,
-        splitScreenMode: true,
       builder: (_ , child) {
         return GetMaterialApp(
           enableLog: true,
           initialRoute: Routes.SPLASH,
           getPages: AppPages.routes,
           initialBinding: AppBinding(),
-          theme: AppTheme.darkTheme,
+          theme: AppTheme.lightTheme,
+          darkTheme: AppTheme.darkTheme,
+
           locale: TranslationService.locale,
           fallbackLocale: TranslationService.fallbackLocale,
           translations: TranslationService(),

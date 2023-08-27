@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ososs_test/shared/theme/theme.dart';
 
 IconButton buildChangeThemeButton() {
   return IconButton(
@@ -14,5 +15,4 @@ IconButton buildChangeThemeButton() {
 
 
 void toggleTheme() {
-  Get.changeTheme(Get.isDarkMode ? ThemeData.light() : ThemeData.dark());
-}
+  Get.changeThemeMode(Get.isDarkMode ? ThemeMode.light : ThemeMode.dark);}

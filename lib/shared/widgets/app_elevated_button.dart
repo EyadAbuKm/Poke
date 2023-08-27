@@ -22,7 +22,7 @@ class AppElevatedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: Text(text),
+      child: Material(color: Colors.transparent,child: Text(text,style: TextStyle(color: Colors.white,fontSize: 14.sp),)),
       style: ElevatedButton.styleFrom(
 
           shape: RoundedRectangleBorder(

@@ -7,10 +7,12 @@ class AppTheme {
       brightness: Brightness.light,
       primaryColor: Color(0xFF337AB7),
       textTheme: TextTheme(
-        labelLarge: TextStyle(fontSize: 16.sp), // Adjust the font size here
+        labelLarge: TextStyle(fontSize: 16.sp,color: Colors.black), // Adjust the font size here
       ),
       appBarTheme: AppBarTheme(
-          backgroundColor: Colors.white,
+        iconTheme: IconThemeData(
+          color: Colors.white
+        )
       ),
       colorScheme: ColorScheme.fromSwatch().copyWith(
         primary: ColorConstants.primaryColor, brightness: Brightness.light,
@@ -22,12 +24,15 @@ class AppTheme {
       brightness: Brightness.dark,
       appBarTheme: AppBarTheme(
           backgroundColor: Colors.grey[800],
+          iconTheme: IconThemeData(
+              color: Colors.white
+          ),
           titleTextStyle: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w700)
 
       ),
       primaryColor: ColorConstants.primaryColor,
       textTheme: TextTheme(
-        labelLarge: TextStyle(fontSize: 16.sp), // Adjust the font size here
+        labelLarge: TextStyle(fontSize: 16.sp,color: Colors.white), // Adjust the font size here
       ),
       colorScheme: ColorScheme.fromSwatch().copyWith(
         primary: ColorConstants.primaryColor,

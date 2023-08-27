@@ -26,7 +26,7 @@ class PokemonCard extends StatelessWidget {
               children: [
                 ImageWidget(
                     url: getImageUrlFromPokemonUrl(pokemon.url),
-                    width: 100.w,
+                    width: 110.h,
                     height: 110.h,
                     radius: 15.r),
                 SizedBox(

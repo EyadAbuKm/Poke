@@ -34,25 +34,28 @@ Widget buildBottomButtonsSection() {
 
   return Column(
     children: [
-      TextButton(
-          onPressed: () {
+      InkWell(
+          onTap: () {
             homeController.textChanged("");
           },
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.delete,
-                color: Colors.red,
-              ),
-              SizedBox(
-                width: 4.w,
-              ),
-              Text(
-                "Clear".tr,
-                style: TextStyle(color: Colors.red),
-              )
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.delete,
+                  color: Colors.red,
+                ),
+                SizedBox(
+                  width: 4.w,
+                ),
+                Text(
+                  "Clear".tr,
+                  style: TextStyle(color: Colors.red,fontSize: 14.sp),
+                )
+              ],
+            ),
           )),
       AppElevatedButton(
         onPressed: () {
